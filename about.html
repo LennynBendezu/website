@@ -1,0 +1,216 @@
+<!DOCTYPE html> 
+<html lang="es"> <head>     <meta charset="UTF-8">     <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+<title>Empresa de Telecomunicaciones</title>     
+<style>         
+body {  
+        font-family: Arial, sans-serif;             
+        margin: 0;             
+        padding: 0;             
+        line-height: 1.6;         
+    }          
+                
+header {             
+        background-color: #333;             
+        color: #fff;            
+        padding: 15px;             
+        text-align: center;         
+        }          
+        
+nav ul {             
+        list-style: none;             
+        padding: 0;         
+        }          
+        
+nav ul li {             
+        display: inline;             
+        margin-right: 20px;         
+        }          
+        
+nav ul li a {             
+        color: #fff;             
+        text-decoration: none;         
+        }          
+        
+main {             
+        padding: 20px;         
+        }          
+        
+section {             
+        margin-bottom: 30px;         
+        }          
+        
+footer {             
+        text-align: center;             
+        padding: 10px;             
+        position: absolute;             
+        bottom: 0;             
+        width: 100%;             
+        background-color: #333;             
+        color: #fff;         
+        }          
+
+form {             
+        display: flex;             
+        flex-direction: column;             
+        max-width: 400px;             
+        margin: auto;         
+        }          
+        
+label,         
+input,         
+
+textarea {            
+        margin-bottom: 10px;         
+        }          
+        
+input[type="text"],         
+input[type="email"],         
+
+textarea {             
+        width: 100%;             
+        padding: 8px;         
+        }          
+        
+input[type="submit"] {             
+        padding: 10px;             
+        background-color: #333;             
+        color: #fff;             
+        border: none;             
+        cursor: pointer;         
+        }          
+        
+input[type="submit"]:hover {             
+        background-color: #555;         
+        }         
+        
+.feature {             
+        display: flex;             
+        align-items: center;            
+        margin-bottom: 20px;         
+        }          
+        
+.feature img {             
+        max-width: 150px;             
+        margin-right: 20px;         
+        }          
+        
+.pricing-table {            
+        display: flex;             
+        justify-content: space-around;         
+        }          
+        
+.pricing-column {             
+        flex: 1;             
+        text-align: center;             
+        padding: 20px;             
+        margin: 0 10px;            
+        border: 1px solid #ccc;             
+        border-radius: 5px;         
+        }              
+        
+        </style> 
+    </head> 
+    <body>     
+<header>         
+    <nav>             
+    <ul>                 
+        <li><a href="#inicio">Inicio</a></li>                 
+        <li><a href="#servicios">Servicios</a></li>                 
+        <li><a href="#planes">Planes</a></li>                 
+        <li><a href="#contacto">Contacto</a></li>             
+    </ul>         
+    </nav>     
+</header>      
+
+<!--Principal -->     
+<section id="inicio">         
+    <h1>Bienvenido a nuestra empresa de telecomunicaciones</h1>         
+    <p>Somos líderes en proporcionar servicios de conexión a internet inalámbricamente</p>         
+    
+<!-- Características -->         
+    <div class="feature">             
+        <img src="" alt="">             
+        <div>                 
+        <h2>Servicio de Internet</h2>                 
+        <p>Ofrecemos conexiones de alta velocidad y estabilidad.</p>             
+        </div>         
+    </div>         
+    
+    <div class="feature">             
+        <img src="" alt="">             
+        <div>                 
+        <h2>Telefonía Móvil y Fija</h2>                 
+        <p>Planes flexibles y cobertura nacional.</p>             
+        </div>         
+    </div>         
+    
+    <div class="feature">             
+        <img src="" alt="">             
+        <div>                 
+        <h2>Televisión por Cable o Satélite</h2>                 
+        <p>Una amplia gama de canales y opciones de entretenimiento.</p>             
+        </div>         
+    </div>     
+</section>      
+
+<!--Servicios -->     
+<section id="servicios">         
+    <h2>Nuestros Servicios</h2>         
+    <ul>             
+        <li>Servicio de internet de alta velocidad</li>             
+        <li>Telefonía móvil y fija</li>             
+        <li>Televisión por cable o satélite</li>             
+        <li>Redes empresariales</li>             
+        <li>Soluciones de voz IP</li>         
+    </ul>     
+</section>      
+
+<!--Planes-->     
+<section id="planes">         
+    <h2>Nuestros Planes</h2>         
+        <div class="pricing-table">             
+        <div class="pricing-column">                 
+    <h3>Plan Básico</h3>                 
+        <p>Para uso doméstico</p>                 
+        <p>Precio: $60/mes</p>                
+            <ul>                     
+                <li>Internet hasta 50 Mbps</li>                     
+                <li>Llamadas locales ilimitadas</li>                
+            </ul>                 
+    <a href="#">Más información</a>             
+        </div>             
+        <div class="pricing-column">                 
+    <h3>Plan Empresarial</h3>                 
+        <p>Para empresas</p>                 
+        <p>Precio: $120/mes</p>                 
+            <ul>                     
+                <li>Internet simétrico de alta velocidad</li>                     
+                <li>Asistencia técnica 24/7</li>                     
+            </ul>                 
+    <a href="#">Más información</a>             
+        </div>     
+</section>           
+
+<!-- Formulario de contacto -->
+<section id="contacto">                
+    <h2>Contacto</h2>         
+        <p>¡Contáctanos para más información!</p>         
+        <form action="enviar.php" method="post">             
+    <label for="nombre">Nombre:</label>             
+        <input type="text" id="nombre" name="nombre" required><br>             
+    <label for="email">Correo electrónico:</label>             
+    <input type="email" id="email" name="email" required><br>             
+        <label for="mensaje">Mensaje:</label>             
+    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br>             
+    <input type="submit" value="Enviar">         
+    </form>     </section> </main>      
+    
+    <!--         
+    <section>         
+        <footer>             
+        <p>&copy; 2023 Empresa de Telecomunicaciones</p>         
+        </footer>     
+    </section>     
+    -->  
+</body> 
+</html>
